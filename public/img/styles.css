@@ -1,0 +1,180 @@
+/* Fuente personalizada */
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(rgba(39, 41, 41, 0.5), rgba(0, 0, 0, 0.5)), url("mmm.png") center/cover repeat-x fixed;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero section */
+.hero-section {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 100px 0;
+    margin-top: -56px; /* Compensa el navbar fixed */
+    margin-bottom: 50px;
+}
+
+/* Product cards */
+.product-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Review cards */
+.review-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Contact form */
+#contacto {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+/* Map section */
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer a:hover {
+    color: #adb5bd !important;
+    text-decoration: underline !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+    
+    .product-card, .review-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* ... (los estilos anteriores se mantienen) ... */
+
+/* Estilos para el carrito */
+.btn-outline-dark {
+    border-color: #dee2e6;
+    color: #495057;
+}
+
+.btn-outline-dark:hover {
+    background-color: #f8f9fa;
+}
+
+#cartCounter {
+    font-size: 0.6rem;
+}
+
+/* Offcanvas del carrito */
+.offcanvas {
+    max-width: 400px;
+    width: 100%;
+}
+
+.cart-item img {
+    height: 60px;
+    object-fit: cover;
+}
+
+.cart-summary {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.input-group-sm .btn {
+    padding: 0.25rem 0.5rem;
+}
+
+/* Toast notification */
+.toast {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Botones de cantidad */
+.input-group .btn {
+    z-index: 1;
+}
+
+/* Efecto hover para items del carrito */
+.cart-item:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Estilos para el modal de confirmación */
+#purchaseModal .modal-header {
+    border-bottom: none;
+}
+
+#purchaseModal .modal-content {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#purchaseModal .modal-footer {
+    border-top: none;
+    justify-content: center;
+}
+
+#purchaseModal .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+#purchaseModal .btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
