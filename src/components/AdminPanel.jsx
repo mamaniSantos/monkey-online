@@ -18,7 +18,7 @@ const AdminPanel = ({ onClose, products, onAddProduct, onUpdateProduct, onDelete
     if (savedProducts.length > 0) {
       savedProducts.forEach(product => onAddProduct(product))
     }
-  }, [])
+  }, [onAddProduct])
 
   const handleChange = (e) => {
     const { name, value } = e.target
