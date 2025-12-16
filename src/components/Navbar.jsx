@@ -12,9 +12,7 @@ const Navbar = ({ cartCount, onCartClick, user, onLoginClick, onLogout, onAdminC
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          <img src="img/monkey.png" alt="Logo de la empresa" height="60" />
-        </a>
+        
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -73,3 +71,9 @@ const Navbar = ({ cartCount, onCartClick, user, onLoginClick, onLogout, onAdminC
 }
 
 export default Navbar
+
+
+
+  // <a className="navbar-brand" href="#">
+  //         <img src="img/monkey.png" alt="Logo de la empresa" height="60" />
+  //       </a>

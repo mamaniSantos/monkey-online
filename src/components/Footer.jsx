@@ -63,13 +63,13 @@ const Footer = () => {
         <div className="text-center">
           <p className="mb-0">Derechos reservados &copy; 2025 Monkey Web</p>
           <p className="mb-0">
-            <a href="#" className="text-white text-decoration-none me-3">
+            {/* <a href="#" className="text-white text-decoration-none me-3">
               Política de privacidad
-            </a>
+            </a> */}
             |
-            <a href="#" className="text-white text-decoration-none ms-3">
+            {/* <a href="#" className="text-white text-decoration-none ms-3">
               Términos de uso
-            </a>
+            </a> */}
           </p>
         </div>
       </div>
